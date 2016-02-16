@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name usb-relay)(type KiCad)(uri "$(KIPRJMOD)/usb-relay.pretty")(options "")(descr ""))
+)
