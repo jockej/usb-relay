@@ -46,12 +46,12 @@ $EndDescr
 $Comp
 L R R3
 U 1 1 56BF31DE
-P 4950 6100
-F 0 "R3" V 5030 6100 50  0000 C CNN
-F 1 "R" V 4950 6100 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 4880 6100 50  0001 C CNN
-F 3 "" H 4950 6100 50  0000 C CNN
-	1    4950 6100
+P 3850 6000
+F 0 "R3" V 3930 6000 50  0000 C CNN
+F 1 "R" V 3850 6000 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 3780 6000 50  0001 C CNN
+F 3 "" H 3850 6000 50  0000 C CNN
+	1    3850 6000
 	0    1    1    0   
 $EndComp
 $Comp
@@ -68,12 +68,12 @@ $EndComp
 $Comp
 L R R2
 U 1 1 56BF32F5
-P 4750 6250
-F 0 "R2" V 4830 6250 50  0000 C CNN
-F 1 "R" V 4750 6250 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 4680 6250 50  0001 C CNN
-F 3 "" H 4750 6250 50  0000 C CNN
-	1    4750 6250
+P 3550 6100
+F 0 "R2" V 3630 6100 50  0000 C CNN
+F 1 "R" V 3550 6100 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 3480 6100 50  0001 C CNN
+F 3 "" H 3550 6100 50  0000 C CNN
+	1    3550 6100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -257,17 +257,6 @@ F 3 "" H 4700 4600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LM741 U1
-U 1 1 56BF4D2D
-P 5050 5450
-F 0 "U1" H 5050 5700 50  0000 L CNN
-F 1 "LM741" H 5050 5600 50  0000 L CNN
-F 2 "Housings_DIP:DIP-8_W7.62mm" H 5100 5500 50  0001 C CNN
-F 3 "" H 5200 5600 50  0000 C CNN
-	1    5050 5450
-	1    0    0    -1  
-$EndComp
-$Comp
 L +5V #PWR03
 U 1 1 56BF5036
 P 5550 1150
@@ -396,34 +385,6 @@ Wire Wire Line
 	3050 5750 3050 5600
 Wire Wire Line
 	3050 5300 3050 3900
-Wire Wire Line
-	3050 5300 4600 5300
-Wire Wire Line
-	4600 5300 4600 5350
-Wire Wire Line
-	4600 5350 4750 5350
-$Comp
-L +5V #PWR09
-U 1 1 56BF672A
-P 4950 5100
-F 0 "#PWR09" H 4950 4950 50  0001 C CNN
-F 1 "+5V" H 4950 5240 50  0000 C CNN
-F 2 "" H 4950 5100 50  0000 C CNN
-F 3 "" H 4950 5100 50  0000 C CNN
-	1    4950 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR010
-U 1 1 56BF69E4
-P 4950 5800
-F 0 "#PWR010" H 4950 5550 50  0001 C CNN
-F 1 "GND" H 4950 5650 50  0000 C CNN
-F 2 "" H 4950 5800 50  0000 C CNN
-F 3 "" H 4950 5800 50  0000 C CNN
-	1    4950 5800
-	1    0    0    -1  
-$EndComp
 $Comp
 L C C1
 U 1 1 56BF6B62
@@ -476,27 +437,7 @@ Wire Wire Line
 	5100 1800 5100 1750
 Connection ~ 5100 1750
 Wire Wire Line
-	4950 5150 4950 5100
-Wire Wire Line
-	4750 5550 4750 6100
-Wire Wire Line
-	4750 6100 4800 6100
-Wire Wire Line
-	5400 6100 5100 6100
-Wire Wire Line
-	5400 4250 5400 6100
-Wire Wire Line
-	5400 5450 5350 5450
-Wire Wire Line
-	4950 5750 4950 5800
-NoConn ~ 5050 5750
-NoConn ~ 5150 5750
-Wire Wire Line
-	4750 6400 2700 6400
-Wire Wire Line
 	2700 6400 2700 5650
-Wire Wire Line
-	2700 5650 3050 5650
 Connection ~ 3050 5650
 Wire Wire Line
 	6400 5500 6900 5500
@@ -529,7 +470,6 @@ Wire Wire Line
 	5950 3900 5950 4250
 Wire Wire Line
 	5950 4250 5400 4250
-Connection ~ 5400 5450
 Wire Wire Line
 	5650 3900 5650 4050
 Wire Wire Line
@@ -597,4 +537,6 @@ SCK
 Wire Wire Line
 	5650 4150 5750 4150
 Connection ~ 5750 4150
+Wire Wire Line
+	2700 5650 3050 5650
 $EndSCHEMATC
