@@ -467,7 +467,7 @@ Wire Wire Line
 Text GLabel 6300 3950 3    60   Input ~ 0
 RST
 Wire Wire Line
-	5550 3900 5250 3900
+	5200 3900 5550 3900
 Wire Wire Line
 	5250 3900 5250 3600
 Text GLabel 5250 3600 1    60   Input ~ 0
@@ -589,4 +589,38 @@ Connection ~ 2550 4400
 Wire Wire Line
 	2550 4600 2550 5800
 Connection ~ 2550 4700
+$Comp
+L LED D4
+U 1 1 56D5D510
+P 4800 3900
+F 0 "D4" H 4800 4000 50  0000 C CNN
+F 1 "LED" H 4800 3800 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 4800 3900 50  0001 C CNN
+F 3 "" H 4800 3900 50  0000 C CNN
+	1    4800 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR015
+U 1 1 56D5D56F
+P 4600 3900
+F 0 "#PWR015" H 4600 3650 50  0001 C CNN
+F 1 "GND" H 4600 3750 50  0000 C CNN
+F 2 "" H 4600 3900 50  0000 C CNN
+F 3 "" H 4600 3900 50  0000 C CNN
+	1    4600 3900
+	1    0    0    -1  
+$EndComp
+Connection ~ 5250 3900
+$Comp
+L Jumper_NC_Small JP2
+U 1 1 56D5D828
+P 5100 3900
+F 0 "JP2" H 5100 3980 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 5110 3840 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 5100 3900 50  0001 C CNN
+F 3 "" H 5100 3900 50  0000 C CNN
+	1    5100 3900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
